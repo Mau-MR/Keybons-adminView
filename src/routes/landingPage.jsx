@@ -1,5 +1,6 @@
 import "./landigPage.css"
 import SideBtn from "../containers/SideBtnContainer";
+import ProgressWidget from "../containers/ProgressWidgetContainer";
 
 //This is going to be the main root of the adminView
 const LandingPage = () => {
@@ -10,7 +11,9 @@ const LandingPage = () => {
                 <div className="left-bar side-bars">
                     <SideBtn/>
                 </div>
-                <div className="content-bar">midiumbar</div>
+                <div className="content-bar">
+                    <ProgressWidget/>
+                </div>
                 <div className="right-bar side-bars">rightBar</div>
             </div>
         </div>
