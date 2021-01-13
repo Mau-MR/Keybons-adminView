@@ -1,7 +1,6 @@
 import "./landigPage.css";
 import SideBtn from "../containers/SideBtnContainer";
-import ProgressWidget from "../components/ProgressWidget";
-import { AccountCircle } from "@material-ui/icons";
+import EmployeePerformance from "../components/employeePerformance";
 
 //This is going to be the main root of the adminView
 const LandingPage = () => {
@@ -13,10 +12,12 @@ const LandingPage = () => {
           <SideBtn />
         </div>
         <div className="content-bar">
-          <ProgressWidget
-            icon={<AccountCircle />}
-            percentage={100}
-            activity={"make the inventory"}
+          <EmployeePerformance
+            name="Mauricio E."
+            surname="Merida Rivera"
+            percentage={50}
+            qty={35}
+            color="rgba(79,36,175,1)"
           />
         </div>
         <div className="right-bar side-bars">rightBar</div>
@@ -25,4 +26,3 @@ const LandingPage = () => {
   );
 };
 export default LandingPage;
-
